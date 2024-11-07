@@ -1,4 +1,4 @@
-/* # RESET */
+/* # RESET
 
 * {
   box-sizing: border-box;
@@ -25,10 +25,14 @@ ul {
 }
 
 /* # UTILS */
-
+/* 
 .container {
   margin: 0 auto;
   padding: 0 10px;
   width: 1000px;
   max-width: 100%;
+} */
+
+.sfondo {
+  height: 200px;
 }
