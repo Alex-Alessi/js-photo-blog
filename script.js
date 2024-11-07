@@ -9,18 +9,18 @@ fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
       postRow.innerHTML += `<div class="col-4">
               <div class="card h-100">
                 <div class="mx-3 mt-3">
-                  <img src="${posts.url}" class="card-img-top" alt="..." />
+                  <img src="${post.url}" class="card-img-top" alt="..." />
                 </div>
                 <div class="card-body">
                   <p class="card-text">
-                    <em> ${posts.title} </em>
+                    <em> ${post.title} </em>
                   </p>
                 </div>
               </div>
             </div>`;
     });
 
-    const postCardsEl = document.querySelectorAll("#post-row .card");
+    const postCardsEl = document.querySelectorAll("#posts-row .card");
     postCardsEl.forEach((cardEl) => {
       console.log(cardEl);
     });
