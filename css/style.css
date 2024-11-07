@@ -1,3 +1,9 @@
+/* # FONT */
+@font-face {
+  font-family: Edu-Tas-Beginner;
+  src: url("./font/EduTasBeginner-Regular.ttf");
+}
+
 /* # RESET
 
 * {
