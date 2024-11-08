@@ -24,11 +24,10 @@ fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
     const postCardsEl = document.querySelectorAll("#posts-row .card");
     postCardsEl.forEach((cardEl) => {
       console.log(cardEl);
-    });
-
-    postRow.addEventListener("click", () => {
-      overlayPost.classList.remove("d-none");
-      console.log("ciao");
+      cardEl.addEventListener("click", () => {
+        overlayPost.classList.remove("d-none");
+        console.log("ciao");
+      });
     });
   });
 
