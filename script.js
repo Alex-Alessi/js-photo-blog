@@ -26,7 +26,7 @@ fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
       console.log(cardEl);
     });
 
-    posts.addEventListener("click", () => {
+    postRow.addEventListener("click", () => {
       overlayPost.classList.remove("d-none");
       console.log("ciao");
     });
