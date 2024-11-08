@@ -4,41 +4,30 @@
   src: url("./font/EduTasBeginner-Regular.ttf");
 }
 
-/* # RESET
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Open Sans", sans-serif;
-}
-
-img {
-  max-width: 100%;
-  display: block;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-ul {
-  list-style-type: none;
-}
-
-/* # UTILS */
-/* 
-.container {
-  margin: 0 auto;
-  padding: 0 10px;
-  width: 1000px;
-  max-width: 100%;
-} */
-
+/* # SFONDO*/
 .sfondo {
   height: 150px;
+}
+
+/* # OVERLAY */
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+}
+
+#button {
+  margin-left: 45%;
+}
+
+/* ! HOVER */
+#picture:hover {
+  cursor: pointer;
 }

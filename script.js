@@ -1,4 +1,5 @@
 const postRow = document.getElementById("posts-row");
+const overlayPost = document.getElementById("overlay");
 
 fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
   .then((res) => res.json())
@@ -6,7 +7,7 @@ fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
     console.log(posts);
 
     posts.forEach((post) => {
-      postRow.innerHTML += `<div class="col-4">
+      postRow.innerHTML += `<div onclick="actOverlayFunction()" class="col-4" id="picture">
               <div class="card h-100">
                 <div class="mx-3 mt-3">
                   <img src="${post.url}" class="card-img-top" alt="..." />
@@ -25,3 +26,12 @@ fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
       console.log(cardEl);
     });
   });
+
+function closeFunction() {
+  overlayPost.classList.add("d-none");
+}
+
+function actOverlayFunction() {
+  overlayPost.classList.remove("d-none");
+  console.log("ciao");
+}
