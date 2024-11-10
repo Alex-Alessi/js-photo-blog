@@ -20,7 +20,6 @@
 /* # OVERLAY */
 #overlay {
   position: fixed; /* Sit on top of the page content */
-
   width: 100%; /* Full width (cover the whole page) */
   height: 100%; /* Full height (cover the whole page) */
   top: 0;
@@ -39,7 +38,7 @@
 #picture:hover {
   cursor: pointer;
   transform: rotate(25deg);
-  transition: 300ms;
+  transition: all 300ms;
   z-index: 1;
   transform-origin: 50% 5%;
 }
