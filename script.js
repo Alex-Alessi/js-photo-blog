@@ -15,7 +15,7 @@ fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
                 </div>
                 <img src="./img/pin.svg" id="pin">
                 <div class="card-body">
-                  <p class="card-text">
+                  <p class="card-text edu-tas-beginner">
                     <em> ${post.title} </em>
                   </p>
                 </div>

@@ -1,7 +1,15 @@
 /* # FONT */
 @font-face {
-  font-family: EduTasBeginner;
-  src: url("./font/EduTasBeginner-Regular.ttf");
+  font-family: eduTasBeginner;
+  src: url("https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&display=swap");
+  font-weight: bold;
+}
+
+.edu-tas-beginner {
+  font-family: "Edu TAS Beginner", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
 /* # SFONDO*/
@@ -30,11 +38,15 @@
 /* ! HOVER */
 #picture:hover {
   cursor: pointer;
+  transform: rotate(25deg);
+  transition: 300ms;
+  z-index: 1;
+  transform-origin: 50% 5%;
 }
 
 #pin {
   position: absolute;
-  width: 50px;
+  width: 40px;
   margin-left: 45%;
   margin-top: -15px;
 }
